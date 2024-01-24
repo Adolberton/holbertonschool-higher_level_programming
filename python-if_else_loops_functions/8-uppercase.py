@@ -5,4 +5,4 @@ def uppercase(str):
         if 'a' <= i <= 'z':
             i = chr(ord(i) - 32)
         str_up += i
-    print(str_up)
+    print(str_up.format())
