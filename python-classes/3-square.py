@@ -4,8 +4,6 @@
 
 class Square:
     """this class defines a square"""
-    def area(self):
-        """init new square instance"""
     def __init__(self, size=0):
         """init new square instance"""
         if type(size) is not int:
@@ -13,3 +11,7 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
+
+    def area(self):
+        """init new square instance"""
+        pass
