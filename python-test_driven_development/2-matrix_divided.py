@@ -16,10 +16,13 @@ def matrix_divided(matrix, div):
             raise TypeError("div must be a number")
         if str == "div0":
             raise ZeroDivisionError("division by zero")
+    if len(matrix) == 0:
+        err("list")
 
     if not isinstance(matrix, list):
         err("list")
-    ref_size = len(matrix[0])
+    if isinstance(matrix[0], list):
+        ref_size = len(matrix[0])
     for row in matrix:
         if not isinstance(row, list):
             err("list")
