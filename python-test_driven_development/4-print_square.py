@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""supercomment"""
+
+
 def print_square(size):
+    """supercomment"""
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:
