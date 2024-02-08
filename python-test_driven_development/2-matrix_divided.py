@@ -8,7 +8,7 @@ def matrix_divided(matrix, div):
     def err(str):
         """raise the error"""
         if str == "list":
-            raise TypeError(e)
+            raise TypeError(f"{e}")
         if str == "row":
             raise TypeError("Each row of the matrix must have the same size")
         if str == "div":
