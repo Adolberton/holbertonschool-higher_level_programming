@@ -1,7 +1,12 @@
 #!/usr/bin/python3
-"""classe list commentaire"""
+
+"""
+Module with an empty class `BaseGeometry`.
+"""
 
 
 class BaseGeometry:
-    """classe list commentaire"""
+    """
+    Defines the BaseGeometry class.
+    """
     pass
