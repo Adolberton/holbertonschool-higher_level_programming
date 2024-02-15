@@ -5,4 +5,5 @@
 def write_file(filename="", text=""):
     """holberton mandatory doc"""
     with open(filename, 'w', encoding='utf-8') as fd:
-        fd.write(text)
+        bytes_written = fd.write(text)
+    return bytes_written
