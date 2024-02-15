@@ -9,5 +9,4 @@ class BaseGeometry:
     """
     Defines the BaseGeometry class.
     """
-    def area(self):
-       raise Exception("area() is not implemented")
+    pass
