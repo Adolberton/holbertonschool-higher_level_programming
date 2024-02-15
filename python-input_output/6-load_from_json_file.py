@@ -7,5 +7,5 @@ import json
 def load_from_json_file(filename):
     """holberton mandatory doc"""
     with open(filename) as fd:
-        py_obj = json.load(filename)
+        py_obj = json.load(fd)
         return py_obj
