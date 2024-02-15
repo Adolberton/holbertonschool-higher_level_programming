@@ -38,14 +38,9 @@ class Rectangle(BaseGeometry):
 
         self.__width = width
         self.__height = height
-        
-        def area(self):
-            return self.__height * self.__width
-        
-        def __str__(self):
-            return f"[{self}] {self.width}/{self.height}"
 
-r = Rectangle(3, 5)
+    def area(self):
+        return self.__height * self.__width
 
-print(r)
-print(r.area())
+    def __str__(self):
+        return f"[Rectangle] {self.__width}/{self.__height}"
