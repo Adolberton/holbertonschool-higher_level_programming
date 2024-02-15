@@ -4,8 +4,6 @@
 
 def read_file(filename=""):
     """holberton mandatory doc"""
-    with open(filename, 'r', encoding='utf-8') as fd:
-        text = fd.read()
-        for line in text:
+    with open(filename, encoding='utf-8') as fd:
+        for line in fd:
             print(line, end="")
-        print()
