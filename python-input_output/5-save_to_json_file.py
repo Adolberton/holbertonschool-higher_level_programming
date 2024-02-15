@@ -6,4 +6,5 @@ import json
 
 def save_to_json_file(my_obj, filename):
     """holberton mandatory doc"""
-    return json.dump(my_obj, filename)
+    with open(filename, 'w') as fd:
+        return json.dump(my_obj, fd)
