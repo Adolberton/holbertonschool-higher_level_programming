@@ -13,7 +13,10 @@ class Student:
         if isinstance(attrs, list) and all(isinstance(i, str) for i in attrs):
             new_dict = {}
             for key in attrs:
-                new_dict[key] = self.__dict__[key]
+                try:
+                    new_dict[key] = self.__dict__[key]
+                except KeyError:
+                    continue
             return new_dict
         else:
             return self.__dict__
