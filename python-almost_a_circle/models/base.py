@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Holberton mandatory doc"""
 
+
 class Base:
     """Holberton mandatory doc"""
     __nb_objects = 0
