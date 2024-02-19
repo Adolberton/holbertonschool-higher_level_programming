@@ -69,6 +69,6 @@ class Rectangle(Base):
         return self.height * self.width
     
     def display(self):
-        """x must be an integer"""
+        """x must be an integer more"""
         for line in range(self.height):
             print(self.width * "#")
