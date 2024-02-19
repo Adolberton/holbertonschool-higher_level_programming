@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Holberton mandatory doc"""
 
-from base import Base
+from models.base import Base
 
 
 
