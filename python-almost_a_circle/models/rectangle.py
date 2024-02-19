@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Holberton mandatory doc"""
 
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -67,3 +67,7 @@ class Rectangle(Base):
     def area(self):
         """x must be an integer"""
         return self.height * self.width
+    
+    def display(self):
+        for line in range(self.height):
+            print(self.width * "#")
