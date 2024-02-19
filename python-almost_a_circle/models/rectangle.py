@@ -9,10 +9,10 @@ class Rectangle(Base):
     """Holberton mandatory doc"""
     def __init__(self, width, height, x=0, y=0, id=None):
         """Holberton mandatory doc"""
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
@@ -53,12 +53,12 @@ class Rectangle(Base):
         if value < 0:
             raise TypeError("x must be >= 0")
         if not isinstance(value, int):
-            raise TypeError("x must be an intege")
+            raise TypeError("x must be an integer")
         self.__x = value
     @y.setter
     def y(self, value):
         if value < 0:
             raise TypeError("y must be >= 0")
         if not isinstance(value, int):
-            raise TypeError("y must be an intege")
+            raise TypeError("y must be an integer")
         self.__y = value
