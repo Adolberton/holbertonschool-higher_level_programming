@@ -70,7 +70,7 @@ class Rectangle(Base):
 
     def display(self):
         """x must be an integer more"""
-        print(self.y * "\n")
+        print(self.y * "\n", end="")
         for line in range(self.height):
             print((self.x * " ") + (self.width * "#"))
 
