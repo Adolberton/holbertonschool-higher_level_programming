@@ -4,7 +4,6 @@
 from models.base import Base
 
 
-
 class Rectangle(Base):
     """Holberton mandatory doc"""
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -30,7 +29,6 @@ class Rectangle(Base):
     @property
     def y(self):
         return self.__y
-    
 
     @width.setter
     def width(self, value):
@@ -55,6 +53,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         self.__x = value
+
     @y.setter
     def y(self, value):
         if value < 0:
