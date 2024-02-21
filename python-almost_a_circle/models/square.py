@@ -22,6 +22,7 @@ class Square(Rectangle):
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     def update(self, *args, **kwargs):
+        """Holberton mandatory doc"""
         if args:
             if len(args) >= 2:
                 self.size = args[1]
