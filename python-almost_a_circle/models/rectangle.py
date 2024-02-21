@@ -97,7 +97,7 @@ class Rectangle(Base):
                     self.id = value
                 if key == "width":
                     self.width = value
-                if key =="height":
+                if key == "height":
                     self.height = value
                 if key == "x":
                     self.x = value
