@@ -22,7 +22,8 @@ class Square(Rectangle):
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     def update(self, *args, **kwargs):
-        """Holberton mandatory doc"""
+        """Hadri suce ma doc"""
+        super().update(**kwargs)
         if args:
             if len(args) >= 1:
                 self.id = args[0]
@@ -33,12 +34,5 @@ class Square(Rectangle):
             if len(args) >= 4:
                 self.y = args[3]
         else:
-            for key, value in kwargs.items():
-                if key == "id":
-                    self.id = value
-                if key == "size":
-                    self.size = value
-                if key == "x":
-                    self.x = value
-                if key == "y":
-                    self.y = value
+            if "size" in kwargs:
+                self.size = kwargs["size"]
