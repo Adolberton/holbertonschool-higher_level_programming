@@ -16,3 +16,6 @@ class Square(Rectangle):
     @size.setter
     def size(self, value):
         self.width = value
+
+    def __str__(self):
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
