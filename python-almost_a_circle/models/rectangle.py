@@ -105,4 +105,5 @@ class Rectangle(Base):
                     self.y = value
 
     def to_dictionary(self):
+        """ Hadri suce tjrs ma doc"""
         return self.__dict__
