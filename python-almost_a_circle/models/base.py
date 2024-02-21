@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Holberton mandatory doc"""
 
+from json import dumps
+
 
 class Base:
     """Holberton mandatory doc"""
@@ -12,3 +14,8 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        if list_dictionaries is None:
+            return "[]"
+        return dumps(list_dictionaries)
