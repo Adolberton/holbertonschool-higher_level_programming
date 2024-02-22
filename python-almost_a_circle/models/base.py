@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Holberton mandatory doc"""
 
-from json import dumps
+from json import dumps, loads
 
 
 class Base:
@@ -29,3 +29,9 @@ class Base:
         list_dicts = [obj.to_dictionary() for obj in list_objs]
         with open(cls.__name__ + '.json', 'w') as fd:
             fd.write(cls.to_json_string(list_dicts))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None:
+            return []
+        return loads(json_string)
