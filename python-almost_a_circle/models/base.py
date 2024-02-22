@@ -38,6 +38,6 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        instance = cls
+        instance = cls(4, 2)
         cls.update(dictionary)
         return instance
