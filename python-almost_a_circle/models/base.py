@@ -38,6 +38,9 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        instance = cls(4, 1)
+        if cls.__name__ == "Reactangle":
+            instance = cls(4, 1)
+        if cls.__name__ == "Square":
+            instance = cls(4)
         instance.update(**dictionary)
         return instance
