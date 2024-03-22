@@ -1,31 +1,29 @@
 #!/usr/bin/python3
 """
-Module that list all states from a database.
+Select all states from the database hbtn_0e_0_usa
 """
+
 
 import MySQLdb
 import sys
 
+
 if __name__ == "__main__":
-
-    if len(sys.argv) != 4:
-        print("Usage: {} <username> <password> <database>".format(sys.argv[0]))
-        sys.exit(1)
-
-    database = MySQLdb.connect(
+    """
+    Connect to a MySQL server
+    and list all states in the database
+    using argv and the MySQLdb library
+    """
+    db = MySQLdb.connect(
         host="localhost",
         port=3306,
         user=sys.argv[1],
         passwd=sys.argv[2],
-        database=sys.argv[3]
+        db=sys.argv[3]
     )
-
-    cursor = database.cursor()
-
-    cursor.execute("SELECT * FROM states ORDER BY states.id")
-
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM `states` ORDER BY states.id ASC")
     for row in cursor.fetchall():
         print(row)
-
     cursor.close()
-    database.close()
+    db.close()
