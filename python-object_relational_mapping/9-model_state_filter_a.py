@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-script that lists all State objects that contain the letter a from the database hbtn_0e_6_usa
+Module that lists all State objects that contain the letter a from a database.
 """
 
 from sqlalchemy import create_engine

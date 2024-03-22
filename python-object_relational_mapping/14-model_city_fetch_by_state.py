@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Python file similar to model_state.py named model_city.py that contains the class definition of a City
+Module that prints all City objects from the database `hbtn_0e_14_usa`.
 """
 
 from sqlalchemy import create_engine

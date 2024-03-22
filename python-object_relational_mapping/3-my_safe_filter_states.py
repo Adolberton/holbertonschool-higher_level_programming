@@ -2,6 +2,7 @@
 """
 Module that display all values in the states table
 of a database where name matches the argument.
+Safe from MySQL injections :)
 """
 
 import MySQLdb
